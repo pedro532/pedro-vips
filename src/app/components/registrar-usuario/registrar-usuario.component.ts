@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup , Validators } from '@angular/forms';
 import { AngularFireAuth } from '@angular/fire/compat/auth'
+import { Router } from '@angular/router';
+import { FirebaseCodeErrorService } from 'src/app/services/firebase-code-error.service';
 
 @Component({
   selector: 'app-registrar-usuario',
@@ -9,9 +11,10 @@ import { AngularFireAuth } from '@angular/fire/compat/auth'
 })
 export class RegistrarUsuarioComponent implements OnInit {
   registrarUsuario: FormGroup;
+  loading: boolean = false;
 
   constructor(private fb: FormBuilder,
-    private afAuth: AngularFireAuth) { 
+    private afAuth: AngularFireAuth, private router: Router, private FirebaseError: FirebaseCodeErrorService) { 
     this.registrarUsuario = this.fb.group({
       email: ['', Validators.required],
       password: ['', Validators.required],
@@ -27,27 +30,22 @@ export class RegistrarUsuarioComponent implements OnInit {
     const password = this.registrarUsuario.value.password;
     const repetirPassword = this.registrarUsuario.value.repetirPassword;
     
+    if (password !== repetirPassword){
+      alert('FALLO, las contraseñas deben coincidir')
+      return;
+    }
+
+    this.loading = true;
     this.afAuth.createUserWithEmailAndPassword(email, password).then((user) => {
+      this.loading = false;
+      this.router.navigate(['/login']);
       console.log(user);
     }).catch((error) => {
-      console.log(error);
-      alert(this.firebaseError(error.code),)
+      this.loading = false;
+      alert(this.FirebaseError.codeError(error.code),);
     } )
   }
 
-  firebaseError(code: string) {
-
-    switch(code) {
-      case 'auth/email-already-in-use':
-        return 'FALLO, El usuario ya existe'
-        case 'auth/weak-password':
-        return 'FALLO, La contraseña es debil'
-        case 'auth/invalid-email':
-        return 'FALLO, correo invalido'
-      default:
-      return 'FALLO, error desconocido'
-    }
-
-  }
+  
 
 }
