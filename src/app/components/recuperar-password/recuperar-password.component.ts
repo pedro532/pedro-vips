@@ -17,7 +17,7 @@ export class RecuperarPasswordComponent implements OnInit {
   constructor(private fb: FormBuilder,
     private afAuth: AngularFireAuth, private router: Router, private firebaseError: FirebaseCodeErrorService) { 
       this.recuperarUsuario = this.fb.group({
-        correo: ['', Validators.required]
+        correo: ['', [Validators.required, Validators.email]]
       })
      }
 
