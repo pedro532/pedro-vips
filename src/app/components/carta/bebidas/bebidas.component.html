@@ -1,0 +1,136 @@
+<div style="background-color: #f2f2f4;">
+    <div style="background-color: white;" class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-12 text-end">
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="logOut()" >Desloguearse</button>
+          </div>
+        </header>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a style="color: #E31E27;" (click)="entrantes()" class="nav-link px-2">ENTRANTES</a></li>
+          <li><a style="color: #E31E27;" (click)="ensaladas()" class="nav-link px-2">ENSALADAS</a></li>
+          <li><a style="color: #E31E27;" (click)="principales()" class="nav-link px-2">PRINCIPALES</a></li>
+          <li><a style="color: #E31E27;" (click)="sandwi()" class="nav-link px-3">SANDWICHES</a></li>
+          <li><a style="color: #E31E27;" (click)="hambu()" class="nav-link px-3">HAMBURGUESAS</a></li>
+          <li><a style="color: #E31E27;" (click)="postres()" class="nav-link px-3">POSTRES</a></li>
+          <li><a style="color: #777474;" class="nav-link px-3">BEBIDAS</a></li>
+        </ul>
+      </div>
+    
+    <H1 style="margin: 100px; text-align: center;"> BEBIDAS </H1>
+    
+    <div style="background-color: #f2f2f4;" class="container">
+      <div class="row">
+        
+        <div class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">REFRESCOS</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/bebidas/refresco.png" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Refrescos siempre llenos.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        <div  class="col-sm-4">
+          <div class="card">
+            <div  class="card-body">
+              <h5 class="card-title">VINOS</h5>
+              <div class="card-text">
+              <img class="logo" src="../../../assets/img/bebidas/vino.jpg" alt="login">
+              <p class="card-text" style="margin-top: 30px;">Tintos
+
+                Astrada Finca Constancia,
+                Damana 5,
+                Ramón Bilbao,
+                Blanco,
+                AURA,
+                Marieta,
+                Tinto de verano,
+                Sangría,
+                Cavas,
+                Anna de Codorníu.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">CAFÉS</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/bebidas/cafe.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Espresso,
+                    Cortado,
+                    Con Leche Bombón,
+                    Capuccino,
+                    Suizo.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 60px;" class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">INFUSIONES Y TÉS</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/bebidas/te.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Earl Grey con Bergamota,
+                    Rooibos con Arándonos Rojos Infusión,
+                    Té verde Sencha,
+                    Infusión Manzanilla, Poleo Tila o Té.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 60px;" class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">OTRAS BEBIDAS</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/bebidas/otras.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Agua Mineral,
+                    Gaseosa,
+                    La Casera Botella,
+                    Zumos,
+                    Zumo de piña o tomate,
+                    Zumo de naranja natural,
+                    Zumo Green Vitality,
+                    Red Bull.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 60px;" class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">CERVEZA</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/bebidas/cerv.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Copa Mahou
+                    Copa Mahou Sin,
+                    Jarra Mahou,
+                    San Miguel Fresca.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      
+      <footer style="background-color: #E31E27; margin-top: 30px; position:static; bottom: 0; width: 100%; height: 150px" class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span style="color: white;" class="mb-12 mb-md-0">© 2023 VIPS Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 d-flex align-items-center d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/vips/"><img style="width: 60px;" src="../../../assets/img/face.png"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/envips/"><img style="width: 60px;" src="../../../assets/img/insta.png"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/VIPS"><img style="width: 70px;" src="../../../assets/img/twee.png"></a></li>
+          
+        </ul>
+        
+      </footer>
+    </div>

@@ -1,0 +1,141 @@
+<div style="background-color: #f2f2f4;">
+    <div style="background-color: white;" class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-12 text-end">
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="logOut()" >Desloguearse</button>
+          </div>
+        </header>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a style="color: #E31E27;" class="nav-link px-2">ENTRANTES</a></li>
+          <li><a style="color: #E31E27;" (click)="ensaladas()" class="nav-link px-2">ENSALADAS</a></li>
+          <li><a style="color: #E31E27;" (click)="principales()" class="nav-link px-2">PRINCIPALES</a></li>
+          <li><a style="color: #777474;" class="nav-link px-3">SANDWICHES</a></li>
+          <li><a style="color: #E31E27;" (click)="hambu()" class="nav-link px-3">HAMBURGUESAS</a></li>
+          <li><a style="color: #E31E27;" (click)="postres()" class="nav-link px-3">POSTRES</a></li>
+          <li><a style="color: #E31E27;" (click)="bebidas()" class="nav-link px-3">BEBIDAS</a></li>
+        </ul>
+      </div>
+    
+    <H1 style="margin: 100px; text-align: center;"> SANDWICHES </H1>
+    
+    <div style="background-color: #f2f2f4;" class="container">
+      <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">VIPS CLUB</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/sand/vips.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Pan blanco, tres pisos de pollo, bacon, jamón York, queso americano y queso Emmental, mayonesa, tomate y lechuga. Disponible también con pan integral.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">CACHOPOWER</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/sand/cachopo.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Cachopo relleno de carne de vacuno, jamón serrano, queso y pimiento del piquillo, huevo frito, guindilla verde, lechuga y mayonesa ligeramente picante, en crujiente pan cristalino. Acompañado de guarnición a elegir y mayonesa ligeramente picante.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">CUBANO</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/sand/cubano.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Pulled pork, queso emmental y queso fundido, jamón cocido, mostaza, mayonesa y pepinillo, en pan maíz y semillas de calabaza. Servido con salsa mostaza y miel. Guarnición a elegir, pídelo con patatas gajo.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        <div style="margin-top: 60px;" class="col-sm-4">
+          <div class="card">
+            <div  class="card-body">
+              <h5 class="card-title">SMOKEY JOE</h5>
+              <div class="card-text">
+              <img class="logo" src="../../../assets/img/sand/joe.jpg" alt="login">
+              <p class="card-text" style="margin-top: 30px;">Vacuno marinado en cerveza tostada, queso cheddar ahumado fundido sobre pimientos asados, rúcula, pesto de hierbas frescas y salsa especial VIPS, en crujiente pan rústico. Acompañado de guarnición a elegir y salsa especial VIPS.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 60px;" class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">O´CLOCK</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/sand/oclock.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Pan rústico, jamón York, pavo cocido, huevos revueltos y queso Chedda fundido.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 60px;" class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">PASTRAMI</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/sand/pastrami.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Pastrami de vacuno cocinado a baja temperatura estilo New York, queso cheddar ahumado, pimiento verde frito y mayonesa-mostaza, en pan rústico de cereales y semillas. Acompañado de guarnición a elegir y salsa mayonesa-mostaza.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 60px;" class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">PIRI PIRI CHICKEN</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/sand/piri.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Contramuslos de jugoso pollo marinado en piri piri, con pico de gallo con mango y toques de hierbabuena, salsa mayo-sriracha ligeramente picante sobre lechuga y brotes en pan de cristal. Acompañado de guarnición a elegir y salsa mayo- sriracha.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 60px;" class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">SALMÓN CLUB</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/sand/salmon.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Pan rústico de cereales y semillas con salmón ahumado noruego, aguacate, tomate, cebolla roja, lechuga, mayonesa y salsa mostaza y miel.
+                    Los productos de la pesca crudos han sido previamente congelados a Tª ≤ de -20ºC, mínimo 24 horas.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 60px;" class="col-sm-4">
+            <div class="card">
+              <div  class="card-body">
+                <h5 class="card-title">TXANGURRÓN</h5>
+                <div class="card-text">
+                <img class="logo" src="../../../assets/img/sand/txangu.jpg" alt="login">
+                <p class="card-text" style="margin-top: 30px;">Crema de centollo sobre langostinos crujientes, brotes frescos y toques de jalapeños en pan tierno estilo brioche. Acompañado de guarnición a elegir y salsa mayo-sriracha.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      
+      <footer style="background-color: #E31E27; margin-top: 30px; position:static; bottom: 0; width: 100%; height: 150px" class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span style="color: white;" class="mb-12 mb-md-0">© 2023 VIPS Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 d-flex align-items-center d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/vips/"><img style="width: 60px;" src="../../../assets/img/face.png"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/envips/"><img style="width: 60px;" src="../../../assets/img/insta.png"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/VIPS"><img style="width: 70px;" src="../../../assets/img/twee.png"></a></li>
+          
+        </ul>
+        
+      </footer>
+    </div>

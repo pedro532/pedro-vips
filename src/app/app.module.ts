@@ -12,6 +12,16 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat'
 import { environment } from 'src/environments/environment';
+import { CartaComponent } from './components/carta/carta.component';
+import { CartaAlergeComponent } from './components/carta-alerge/carta-alerge.component';
+import { DescuentosComponent } from './components/descuentos/descuentos.component';
+import { EntrantesComponent } from './components/carta/entrantes/entrantes.component';
+import { PrincipalesComponent } from './components/carta/principales/principales.component';
+import { EnsaladasComponent } from './components/carta/ensaladas/ensaladas.component';
+import { SandwichesComponent } from './components/carta/sandwiches/sandwiches.component';
+import { HamburguesasComponent } from './components/carta/hamburguesas/hamburguesas.component';
+import { PostresComponent } from './components/carta/postres/postres.component';
+import { BebidasComponent } from './components/carta/bebidas/bebidas.component';
 
 
 @NgModule({
@@ -23,6 +33,16 @@ import { environment } from 'src/environments/environment';
     VerificarCorreoComponent,
     RecuperarPasswordComponent,
     SpinnerComponent,
+    CartaComponent,
+    CartaAlergeComponent,
+    DescuentosComponent,
+    EntrantesComponent,
+    PrincipalesComponent,
+    EnsaladasComponent,
+    SandwichesComponent,
+    HamburguesasComponent,
+    PostresComponent,
+    BebidasComponent,
   ],
   imports: [
     BrowserModule,

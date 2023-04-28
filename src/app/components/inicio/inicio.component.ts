@@ -27,8 +27,16 @@ export class InicioComponent implements OnInit {
     this.afAuth.signOut().then(() => this.router.navigate(['/login']));
   }
 
-  insta() {
-    this.router.navigate(['/https://www.instagram.com/envips/']);
+  carta() {
+    this.router.navigate(['/carta']);
+  }
+
+  cartaaler() {
+    this.router.navigate(['/carta-alerge']);
+  }
+
+  descu() {
+    this.router.navigate(['/descuentos']);
   }
 
 }
