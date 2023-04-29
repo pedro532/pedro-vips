@@ -2,11 +2,12 @@
     <div style="background-color: white;" class="container">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
           <div class="col-md-12 text-end">
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="ini()" >Inicio</button>
             <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="logOut()" >Desloguearse</button>
           </div>
         </header>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a style="color: #E31E27;" class="nav-link px-2">ENTRANTES</a></li>
+          <li><a style="color: #E31E27;" (click)="entrantes()" class="nav-link px-2">ENTRANTES</a></li>
           <li><a style="color: #E31E27;" (click)="ensaladas()" class="nav-link px-2">ENSALADAS</a></li>
           <li><a style="color: #E31E27;" (click)="principales()" class="nav-link px-2">PRINCIPALES</a></li>
           <li><a style="color: #E31E27;" (click)="sandwi()" class="nav-link px-3">SANDWICHES</a></li>

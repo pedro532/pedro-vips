@@ -3,6 +3,7 @@
 <div style="background-color: white;" class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <div class="col-md-12 text-end">
+        <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="ini()" >Inicio</button>
         <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="logOut()" >Desloguearse</button>
       </div>
     </header>
@@ -19,45 +20,35 @@
 
 <H1 style="margin: 100px; text-align: center;"> Lo más bendido </H1>
 
-<div style="background-color: #f2f2f4;" class="container">
-  <div class="row">
-    <div style="margin-top: 50px;" class="col-sm-4">
-      <div class="card">
-        <div  class="card-body">
-          <h5 class="card-title">WELINTON</h5>
-          <div class="card-text">
-          <img class="logo" src="../../../assets/img/welinton.jpg" alt="login">
-          <p class="card-text" style="margin-top: 30px;">Crujiente hojaldre relleno de tierna carne de vacuno, jamón, queso cheddar, duxelle de champiñones y mostaza Dijon. Acompañado de un cremoso puré de patata y coliflor, portobello laminado y salsa española.</p>
-            </div>
-        </div>
-      </div>
+
+<div style="background-color: #E31E27 ;width: 100%;" id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="container">
+  <div  class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../../assets/img/ensa/cesar.jpg" class="d-block w-100" alt="...">
     </div>
-    <div style="margin-top: 50px;" class="col-sm-4">
-      <div class="card">
-        <div  class="card-body">
-          <h5 class="card-title">CACHOPOWER</h5>
-          <div class="card-text">
-          <img class="logo" src="../../../assets/img/cachopower.jpg" alt="login">
-          <p class="card-text" style="margin-top: 30px;">Cachopo relleno de carne de vacuno, jamón serrano, queso y pimiento del piquillo, huevo frito, guindilla verde, lechuga y mayonesa ligeramente picante, en crujiente pan cristalino. Acompañado de guarnición a elegir y mayonesa ligeramente picante</p>
-            </div>
-        </div>
-      </div>
+    <div class="carousel-item">
+      <img src="../../../assets/img/sand/cachopo.jpg" class="d-block w-100" alt="...">
     </div>
-    <div style="margin-top: 50px;" class="col-sm-4">
-      <div class="card">
-        <div  class="card-body">
-          <h5 class="card-title">BURRATÍSIMA</h5>
-          <div class="card-text">
-          <img class="logo" src="../../../assets/img/burrata.jpg" alt="login">
-          <p class="card-text" style="margin-top: 30px;">Carne de vacuno con cremosa burrata, paleta ibérica crujiente, pesto toscano, pomodoro seco, tomate, rúcula y mayonesa de chimichurri en pan brioche tostado con dos sésamos. Acompañada de guarnición a elegir y salsa mayonesa de chimichurri.</p>
-            </div>
-        </div>
-      </div>
+    <div class="carousel-item">
+      <img src="../../../assets/img/hambu/benedict.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../../assets/img/sand/piri.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
   
-  <footer style="background-color: #E31E27; margin-top: 30px; position:static; bottom: 0; width: 100%; height: 150px" class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+  <footer style="background-color: #E31E27; margin-top: 60px; position:static; bottom: 0; width: 100%; height: 150px" class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>

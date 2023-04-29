@@ -22,6 +22,11 @@ import { SandwichesComponent } from './components/carta/sandwiches/sandwiches.co
 import { HamburguesasComponent } from './components/carta/hamburguesas/hamburguesas.component';
 import { PostresComponent } from './components/carta/postres/postres.component';
 import { BebidasComponent } from './components/carta/bebidas/bebidas.component';
+import { GlutenComponent } from './components/carta-alerge/gluten/gluten.component';
+import { FrutosComponent } from './components/carta-alerge/frutos/frutos.component';
+import { LacteosComponent } from './components/carta-alerge/lacteos/lacteos.component';
+import { PescadoComponent } from './components/carta-alerge/pescado/pescado.component';
+import { SojaComponent } from './components/carta-alerge/soja/soja.component';
 
 
 @NgModule({
@@ -43,6 +48,11 @@ import { BebidasComponent } from './components/carta/bebidas/bebidas.component';
     HamburguesasComponent,
     PostresComponent,
     BebidasComponent,
+    GlutenComponent,
+    FrutosComponent,
+    LacteosComponent,
+    PescadoComponent,
+    SojaComponent,
   ],
   imports: [
     BrowserModule,

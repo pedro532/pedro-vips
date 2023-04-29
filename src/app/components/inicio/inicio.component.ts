@@ -26,6 +26,7 @@ export class InicioComponent implements OnInit {
   logOut() {
     this.afAuth.signOut().then(() => this.router.navigate(['/login']));
   }
+  
 
   carta() {
     this.router.navigate(['/carta']);

@@ -3,11 +3,11 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-carta-alerge',
-  templateUrl: './carta-alerge.component.html',
-  styleUrls: ['./carta-alerge.component.css']
+  selector: 'app-lacteos',
+  templateUrl: './lacteos.component.html',
+  styleUrls: ['./lacteos.component.css']
 })
-export class CartaAlergeComponent implements OnInit {
+export class LacteosComponent implements OnInit {
 
   constructor(private afAuth: AngularFireAuth,
     private router: Router) { }
@@ -42,4 +42,5 @@ export class CartaAlergeComponent implements OnInit {
   soja() {
     this.router.navigate(['/soja']);
   }
+
 }

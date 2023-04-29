@@ -15,6 +15,11 @@ import { SandwichesComponent } from './components/carta/sandwiches/sandwiches.co
 import { HamburguesasComponent } from './components/carta/hamburguesas/hamburguesas.component';
 import { PostresComponent } from './components/carta/postres/postres.component';
 import { BebidasComponent } from './components/carta/bebidas/bebidas.component';
+import { GlutenComponent } from './components/carta-alerge/gluten/gluten.component';
+import { FrutosComponent } from './components/carta-alerge/frutos/frutos.component';
+import { LacteosComponent } from './components/carta-alerge/lacteos/lacteos.component';
+import { PescadoComponent } from './components/carta-alerge/pescado/pescado.component';
+import { SojaComponent } from './components/carta-alerge/soja/soja.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login' , pathMatch: 'full' },
@@ -33,6 +38,11 @@ const routes: Routes = [
   { path: 'hamburguesas', component: HamburguesasComponent },
   { path: 'postres', component: PostresComponent },
   { path: 'bebidas', component: BebidasComponent },
+  { path: 'gluten', component: GlutenComponent },
+  { path: 'frutos', component: FrutosComponent },
+  { path: 'lacteos', component: LacteosComponent },
+  { path: 'pescado', component: PescadoComponent },
+  { path: 'soja', component: SojaComponent },
   { path: '**', redirectTo: 'login' , pathMatch: 'full' },
 ];
 
