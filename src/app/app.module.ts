@@ -11,6 +11,7 @@ import { RecuperarPasswordComponent } from './components/recuperar-password/recu
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat'
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore'
 import { environment } from 'src/environments/environment';
 import { CartaComponent } from './components/carta/carta.component';
 import { CartaAlergeComponent } from './components/carta-alerge/carta-alerge.component';
@@ -27,6 +28,8 @@ import { FrutosComponent } from './components/carta-alerge/frutos/frutos.compone
 import { LacteosComponent } from './components/carta-alerge/lacteos/lacteos.component';
 import { PescadoComponent } from './components/carta-alerge/pescado/pescado.component';
 import { SojaComponent } from './components/carta-alerge/soja/soja.component';
+import { provideFirebaseApp } from '@angular/fire/app';
+
 
 
 @NgModule({
@@ -58,7 +61,8 @@ import { SojaComponent } from './components/carta-alerge/soja/soja.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

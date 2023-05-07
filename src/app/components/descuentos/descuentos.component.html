@@ -1,1 +1,55 @@
-<p>descuentos works!</p>
+<div style="background-color: #f2f2f4;">
+    <div style="background-color: white;" class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-12 text-end">
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="ini()" >Inicio</button>
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="logOut()" >Desloguearse</button>
+          </div>
+        </header>
+      </div>
+    
+    <H1 style="margin: 100px; text-align: center;"> PROMOCIONES </H1>
+    
+    <div style="background-image: url(../../../assets/img/ofertas/primera.jpg); background-repeat: no-repeat; background-position: center" class="container">
+        <div class="px-4 py-5 my-5 text-center">
+            
+            <h1 class="display-5 fw-bold text-body-emphasis">Menús de lunes a viernes</h1>
+            <div class="col-lg-6 mx-auto">
+              <h2 style="font-size:medium;">Nuestro menú del día VIPS incluye primero, segundo, postre o café y bebida para que disfrutes de una comida completa día a día.
+                Aparte de que solo es valido de lunes a viernes.
+              </h2>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" (click)="promo1()" class="btn btn-primary btn-lg px-4 gap-3"><label for="btn-modal">SABER MAS</label></button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div style="background-image: url(../../../assets/img/ofertas/segunda.jpg); background-repeat: no-repeat; background-position: center;" class="container">
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold text-body-emphasis">Bebida ilimitada</h1>
+            <div class="col-lg-6 mx-auto">
+                <h2 style="font-size:medium;">En VIPS te rellenamos GRATIS tus refrescos todas las veces que quieras*.
+                Podréis disfrutar de tantos refrescos como os apetezca y pagar sólo el primero.</h2>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" (click)="promo2()" class="btn btn-primary btn-lg px-4 gap-3">SABER MAS</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <footer style="background-color: #E31E27; margin-top: 30px; position:static; bottom: 0; width: 100%; height: 150px" class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span style="color: white;" class="mb-12 mb-md-0">© 2023 VIPS Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 d-flex align-items-center d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/vips/"><img style="width: 60px;" src="../../../assets/img/face.png"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/envips/"><img style="width: 60px;" src="../../../assets/img/insta.png"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/VIPS"><img style="width: 70px;" src="../../../assets/img/twee.png"></a></li>
+          
+        </ul>
+        
+      </footer>
+    </div>
