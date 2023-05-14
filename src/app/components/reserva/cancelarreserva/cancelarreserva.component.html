@@ -1,0 +1,24 @@
+<body style="background-color: #f2f2f4;">
+<div style="background-color: #f2f2f4;">
+    <div style="background-color: white;" class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-12 text-end">
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="ini()" >Inicio</button>
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="logOut()" >Desloguearse</button>
+          </div>
+        </header>
+      </div>
+
+<div class="px-4 py-5 my-5 text-center">
+  <h1 class="display-5 fw-bold text-body-emphasis">QUIERES CANCELAR TU RESERVA?</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">TU RESERVA ES EL DIA/HORA {{fechareserva}}
+      SIENDO {{comensales}} PERSONAS?</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button style="background-color: #E31E27; color: white;" type="button" (click)="eliminar(numeroTelefono)" class="btn me-2 px-4 ">CANCELAR RESERVA</button>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
