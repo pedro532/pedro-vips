@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "login-7205f": {
+      "hosting": {
+        "vips": [
+          "login-7205f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "login-7205f"
+  }
+}
