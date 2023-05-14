@@ -1,0 +1,73 @@
+<div style="background-color: #f2f2f4;">
+
+    <div style="background-color: white;" class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-12 text-end">
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="ini()" >Inicio</button>
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="logOut()" >Desloguearse</button>
+          </div>
+        </header>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a style="color: #E31E27;" (click)="gluten()" class="nav-link px-2">GLUTEN</a></li>
+          <li><a style="color: #E31E27;" (click)="frutos()" class="nav-link px-2">FRUTOS SECOS</a></li>
+          <li><a style="color: #E31E27;" (click)="lacteos()" class="nav-link px-2">LACTEOS</a></li>
+          <li><a style="color: #E31E27;" (click)="pescado()" class="nav-link px-3">PESCADO</a></li>
+          <li><a style="color: #E31E27;" (click)="soja()" class="nav-link px-3">SOJA</a></li>
+        </ul>
+      </div>
+    
+    <H1 style="margin: 100px; text-align: center;"> TU SALUD Y BIENESTAR NOS PREOCUPA </H1>
+    
+    <div class="container marketing">
+
+      
+        <div class="row">
+          <div class="col-lg-4" style="text-align: center;">
+            <img class="logo" src="../../../assets/img/alergenos/gluten.png">
+            <p>El gluten es un conjunto de proteínas de pequeño tamaño, contenidas exclusivamente en las semillas de los cereales de secano, fundamentalmente el trigo, pero también la cebada y el centeno, así como cualquiera de sus variedades e híbridos (tales como la espelta, la escanda, el kamut, el triticale y el farro),12​13​ y algunas variedades de avena.</p>
+            <p><a class="btn btn-secondary" (click)="gluten()">Carta sin gluten</a></p>
+          </div>
+          <div class="col-lg-4" style="text-align: center;">
+            <img class="logo" src="../../../assets/img/alergenos/frutos.png">
+            <p>Las castañas no son estrictamente un fruto seco por su mayor contenido de agua.
+            Hay que tener en cuenta que se puede dar la “reactividad cruzada” entre ellos, de manera que se presenten reacciones alérgicas a varios de ellos.</p>
+            <p><a class="btn btn-secondary" (click)="frutos()">Carta sin frutos secos</a></p>
+          </div>
+          <div class="col-lg-4" style="text-align: center;">
+            <img class="logo" src="../../../assets/img/alergenos/lacteos.png">
+            <p>Las personas que tienen intolerancia a la lactosa no pueden digerir el azúcar (lactosa) que contiene la leche. A raíz de esto, tienen diarrea, gases e hinchazón después de ingerir productos lácteos.</p>
+            <p><a class="btn btn-secondary" (click)="lacteos()">Carta sin lacteos</a></p>
+          </div>
+          <div class="col-lg-4" style="text-align: center;">
+            <img class="logo" src="../../../assets/img/alergenos/marisco.png">
+            <p>En niños pequeños, la alergia al pescado puede desaparecer pero en general, es frecuente que persista y suele durar más que la alergia a la leche o al huevo. Cuando la alergia al pescado comienza en la edad adulta es mucho más difícil que desaparezca y puede durar ya toda la vida.</p>
+            <p><a class="btn btn-secondary" (click)="pescado()">Carta sin pescado</a></p>
+          </div>
+          <div class="col-lg-4" style="text-align: center;">
+            <img class="logo" src="../../../assets/img/alergenos/soja.png">
+            <p>Alergia a la soja El sistema inmunitario identifica algunas proteínas de la soja como perjudiciales, produciendo anticuerpos (IgE) contra estas proteínas</p>
+            <p><a class="btn btn-secondary" (click)="soja()">Carta sin soja</a></p>
+          </div>
+        </div>
+    </div>
+
+    <footer style="background-color: #E31E27;  margin-top: 30px; position:static; bottom: 0; width: 100%; height: 150px; text-align: center;" class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+      <div style="background-color: #E31E27; position:static; top: 250px; bottom: 0;" class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-3">
+          <!-- Facebook -->
+          <a class="btn btn-floating m-1" href="#!" role="button" href="https://www.facebook.com/vips/"
+            ><img style="width: 60px;" src="../../../assets/img/face.png"></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-floating m-1" href="#!" role="button" href="https://www.instagram.com/envips/"
+            ><img style="width: 60px;" src="../../../assets/img/insta.png"></a>
+    
+          <!-- Google -->
+          <a class="btn btn-floating m-1" href="#!" role="button" href="https://twitter.com/VIPS"
+            ><img style="width: 70px;" src="../../../assets/img/twee.png"></a>
+          
+        
+        </section>
+    
+      </div>
