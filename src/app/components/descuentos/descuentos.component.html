@@ -1,0 +1,20 @@
+<body style="background-color: #f2f2f4;">
+<div style="background-color: #f2f2f4;">
+    <div style="background-color: white;" class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-12 text-end">
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="ini()" >Inicio</button>
+            <button style="background-color: #E31E27; color: white;" class="btn me-2" (click)="logOut()" >Desloguearse</button>
+          </div>
+        </header>
+      </div>
+    
+    <H1 style="margin: 50px; text-align: center;"> PROMOCIONES </H1>
+    <p style="margin: -10px; text-align: center;">Estas són las ofertas que están disponibles:</p>
+
+ <app-tarjetadecuento *ngIf='tarjetavisible[0]'></app-tarjetadecuento>
+ <app-tarjetadecuentodos *ngIf='tarjetavisible[1]'></app-tarjetadecuentodos>
+ <app-tarjetadecuentotres *ngIf='tarjetavisible[2]'></app-tarjetadecuentotres>
+
+      </div>
+      </body>
